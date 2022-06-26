@@ -99,6 +99,7 @@ public class Character : MonoBehaviour
         {
             Instantiate(bombDetonation, other.gameObject.transform.position, other.gameObject.transform.rotation);
             CharacterHP(1);
+            Destroy(other.gameObject);
             GameObject[] effects = GameObject.FindGameObjectsWithTag("Particle System");
             for (int i = 0; i < effects.Length; i++)
             {

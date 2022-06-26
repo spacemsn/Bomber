@@ -6,7 +6,7 @@ public class SceneControll : MonoBehaviour
 {
     [Header("Music")]
     [SerializeField] private GameObject Audio;
-    private AudioSource audio;
+    private new AudioSource audio;
 
     [Header("Prefab Enemy")]
     [SerializeField] private GameObject Enemy;
